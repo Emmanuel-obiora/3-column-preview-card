@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  font-size: 15px;
+  min-height: 100vh;
+  background: hsl(0deg, 0%, 95%);
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.preview-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: auto auto 0 auto;
+  width: 41rem;
+}
+@media (max-width: 37.5rem) {
+  .preview-container {
+    grid-template-columns: 1fr;
+    width: 22rem;
+    margin: 15% auto;
+  }
+}
+.preview-container_sedans {
+  background: hsl(31deg, 77%, 52%);
+  border-radius: 8px 0 0 8px;
+}
+@media (max-width: 37.5rem) {
+  .preview-container_sedans {
+    border-radius: 8px 8px 0 0;
+  }
+}
+.preview-container_suvs {
+  background: hsl(184deg, 100%, 22%);
+}
+.preview-container_luxury {
+  background: hsl(179deg, 100%, 13%);
+  border-radius: 0 8px 8px 0;
+}
+@media (max-width: 37.5rem) {
+  .preview-container_luxury {
+    border-radius: 0 0 8px 8px;
+  }
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem;
+}
+@media (max-width: 37.5rem) {
+  article {
+    padding: 3rem;
+  }
+}
+
+img {
+  max-width: 30%;
+}
+
+h1 {
+  color: hsl(0deg, 0%, 95%);
+  text-transform: uppercase;
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+}
+@media (max-width: 37.5rem) {
+  h1 {
+    font-size: 30px;
+  }
+}
+
+p {
+  color: hsla(0deg, 0%, 100%, 0.75);
+  line-height: 1.8;
+  font-size: 11px;
+}
+@media (max-width: 37.5rem) {
+  p {
+    font-size: 16px;
+  }
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 7rem;
+  background: hsl(0deg, 0%, 95%);
+  color: hsl(31deg, 77%, 52%);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  margin: 4rem 0 0.5rem 0;
+  cursor: pointer;
+  border: 2px solid hsl(0deg, 0%, 95%);
+}
+@media (max-width: 37.5rem) {
+  button {
+    margin: 0;
+    width: 9rem;
+    font-size: 16px;
+    padding: 0.65rem 1rem;
+  }
+}
+
+button:hover {
+  background: transparent;
+  border: 2px solid hsl(0deg, 0%, 95%);
+  color: hsl(0deg, 0%, 95%);
+}
+
+.second {
+  color: hsl(184deg, 100%, 22%);
+}
+
+.third {
+  color: hsl(179deg, 100%, 13%);
+}
+
+.attribution {
+  margin-top: auto;
+  font-size: 11px;
+  text-align: center;
+  color: hsl(31deg, 77%, 52%);
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}

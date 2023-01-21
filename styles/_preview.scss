@@ -1,0 +1,106 @@
+.preview-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: auto auto 0 auto;
+    width: 41rem;
+
+    @media (max-width: 37.5rem){
+        grid-template-columns: 1fr;
+        width: 22rem;
+        margin: 15% auto;
+    }
+
+    &_sedans{
+        background: $Bright-orange;
+        border-radius: 8px 0 0 8px;
+
+        @media (max-width:37.5rem){
+            border-radius: 8px 8px 0 0;
+        }
+    }
+
+    &_suvs{
+        background: $Dark-cyan;
+    }
+
+    &_luxury{
+        background: $Very-dark-cyan;
+        border-radius: 0 8px 8px 0;
+
+        @media (max-width:37.5rem){
+            border-radius: 0 0 8px 8px;
+        }
+    }
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem;
+
+    @media (max-width: 37.5rem){
+        padding: 3rem;
+    }
+}
+
+img{
+    max-width: 30%;
+}
+
+h1{
+    color: $Very-light-gray;
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+
+    @media (max-width: 37.5rem){
+        font-size: 30px;
+    }
+}
+
+p{
+    color: $Transparent-white;
+    line-height: 1.8;
+    font-size: 11px;
+
+    @media (max-width: 37.5rem){
+        font-size: 16px;
+    }
+}
+
+button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 7rem;
+    background: $Very-light-gray;
+    color: $Bright-orange;
+    border: none;
+    padding: .5rem 1rem;
+    border-radius: 20px;
+    margin: 4rem 0 .5rem 0;
+    cursor: pointer;
+    border: 2px solid $Very-light-gray;
+
+    @media (max-width: 37.5rem){
+        margin: 0;
+        width: 9rem;
+        font-size: 16px;
+        padding: .65rem 1rem;
+    }
+}
+
+button:hover{
+    background: transparent;
+    border: 2px solid $Very-light-gray;
+    color: $Very-light-gray;
+}
+
+.second{
+    color: $Dark-cyan;
+}
+
+.third{
+    color: $Very-dark-cyan;
+}
