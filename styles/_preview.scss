@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin: auto auto 0 auto;
-    width: 41rem;
+    width: 50rem;
 
     @media (max-width: 37.5rem){
         grid-template-columns: 1fr;
@@ -45,14 +45,15 @@ article{
 }
 
 img{
-    max-width: 30%;
+    max-width: 35%;
 }
 
-h1{
+h2{
     color: $Very-light-gray;
     text-transform: uppercase;
     font-family: 'Big Shoulders Display', cursive;
     font-weight: 700;
+    font-size: 35px;
 
     @media (max-width: 37.5rem){
         font-size: 30px;
@@ -61,22 +62,23 @@ h1{
 
 p{
     color: $Transparent-white;
-    line-height: 1.8;
-    font-size: 11px;
+    line-height: 1.7;
+    font-size: 14.5px;
 
     @media (max-width: 37.5rem){
         font-size: 16px;
     }
 }
 
-button{
+.learning{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 7rem;
+    width: 8rem;
     background: $Very-light-gray;
     color: $Bright-orange;
     border: none;
+    text-decoration: none;
     padding: .5rem 1rem;
     border-radius: 20px;
     margin: 4rem 0 .5rem 0;
@@ -91,7 +93,7 @@ button{
     }
 }
 
-button:hover{
+.learning:hover{
     background: transparent;
     border: 2px solid $Very-light-gray;
     color: $Very-light-gray;
